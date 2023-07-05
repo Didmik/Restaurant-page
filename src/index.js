@@ -1,5 +1,7 @@
-import firstLoad from "./firstLoad"
+import firstLoad from "./firstLoad";
+import "./style.css";
 
 firstLoad();
 
-console.log("Bla bla")
+
+
