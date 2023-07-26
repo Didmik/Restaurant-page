@@ -1,5 +1,6 @@
 import firstLoad from "./firstLoad";
 import menuLoad from "./menu";
+import contactLoad from "./contact";
 import "./style.css";
 
 
@@ -13,7 +14,6 @@ import "./style.css";
         content.appendChild(homeButton);
         content.appendChild(menuButton);
         content.appendChild(contactButton);
-
     })
 
     const menuButton = document.createElement("button");
@@ -23,25 +23,33 @@ import "./style.css";
         resetGrid();
         menuLoad();
         content.appendChild(homeButton);
+        content.appendChild(menuButton);
+        content.appendChild(contactButton);
+    })
+
+   
+    const contactButton = document.createElement("button");
+    contactButton.classList.add("contact");
+    contactButton.textContent = "Contact";
+    contactButton.addEventListener("click", () => {
+        resetGrid();
+        contactLoad();
+        content.appendChild(homeButton);
+        content.appendChild(menuButton);
+        content.appendChild(contactButton);
+    })
+
+
+    content.appendChild(homeButton);
     content.appendChild(menuButton);
     content.appendChild(contactButton);
 
-    })
 
     function resetGrid () {
         while (content.hasChildNodes()) {
             content.removeChild(content.firstChild);
         }
      }
-
-    const contactButton = document.createElement("button");
-    contactButton.classList.add("contact");
-    contactButton.textContent = "Contact";
-
-    content.appendChild(homeButton);
-    content.appendChild(menuButton);
-    content.appendChild(contactButton);
-
 
 
     firstLoad();

@@ -2,6 +2,10 @@ body {
     text-align: center;
 }
 
+.topTitle {
+    margin-top: 70px;
+}
+
 .resPic {
     width: 700px;
     height: 500px;
@@ -10,9 +14,67 @@ body {
 .info {
     font-size: 20px;
     font-weight: 500;
+
 }
 
 
 button {
-   margin: 10px;
+    display: flex;
 }
+
+
+.home {
+   margin: 10px;;
+   position: absolute;
+   top: 10px;
+   left: 44%;
+
+}
+
+.menu {
+    margin: 10px;
+    position: absolute;
+    top: 10px;
+    left: 48%;
+ 
+ }
+
+
+ .contact {
+    margin: 10px;
+    position: absolute;
+    top: 10px;
+    left: 52%;
+ 
+ }
+
+
+ .menuTitle {
+    margin-top: 70px;
+ }
+
+
+ .menuList {
+    margin-right: 30px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 20px;
+ }
+
+
+ .contactTitle {
+    margin-top: 70px;
+ }
+
+
+ .contactList {
+    margin-right: 30px;
+    margin-top: 30px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+ }
